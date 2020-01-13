@@ -26,16 +26,11 @@ PRODUCT_GENERIC_PROPERTIES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pe
+    $(LOCAL_PATH)/overlay
 
-ifeq ($(CURRENT_BUILD_TYPE), nogapps)
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-nogapps
-endif
-
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
+PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
