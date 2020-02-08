@@ -54,6 +54,9 @@ TARGET_KERNEL_CONFIG := vendor/ginkgo-perf_defconfig
 # Enable stats logging in LMKD
 TARGET_LMKD_STATS_LOG := true
 
+# Enable stats logging in LMKD
+TARGET_LMKD_STATS_LOG := true
+
 # Platform
 TARGET_BOARD_PLATFORM := trinket
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
