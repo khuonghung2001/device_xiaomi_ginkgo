@@ -101,3 +101,6 @@ sys.display-size=3840x2160
 
 # Enable virtual display
 debug.sf.enable_hwc_vds=1
+
+# Disable Setupwizard
+ro.setupwizard.mode=DISABLED
