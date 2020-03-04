@@ -140,6 +140,17 @@
       ],
       "ResetOnInit": true
     },
+     {
+      "Name": "CDSchedtuneBoost",
+      "Path": "/dev/stune/camera-daemon/schedtune.boost",
+      "Values": [
+        "10",
+        "1",
+        "0"
+      ],
+       "DefaultIndex": 2,
+       "ResetOnInit": true
+    },
     {
       "Name": "FGSchedtuneBoost",
       "Path": "/dev/stune/foreground/schedtune.boost",
