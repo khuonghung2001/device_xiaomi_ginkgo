@@ -86,7 +86,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=0 \
     debug.sf.disable_backpressure=1 \
     debug.sf.enable_gl_backpressure=1 \
-    debug.sf.early_phase_offset_ns=5000000	
+    debug.sf.early_phase_offset_ns=500000 \
+    debug.sf.early_app_phase_offset_ns=500000 \
+    debug.sf.early_gl_phase_offset_ns=3000000 \
+    debug.sf.early_gl_app_phase_offset_ns=15000000 \
+    debug.cpurend.vsync=false \
+    debug.hwui.use_buffer_age=false \
+    ro.qualcomm.cabl=0 \
+    vendor.display.disable_skip_validate=1 \
+    vendor.gralloc.enable_fb_ubwc=1 \
+    video.disable.ubwc=1 \
+
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
