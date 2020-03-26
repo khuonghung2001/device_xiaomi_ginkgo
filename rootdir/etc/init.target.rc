@@ -275,3 +275,25 @@ on property:sys.thermallct.isincall=1
 
 on property:sys.thermallct.isincall=0
     write /sys/class/power_supply/battery/device/thermalcall 0
+
+# XiaomiParts
+    chown system system /sys/devices/virtual/timed_output/vibrator/vtg_level
+    chmod 0660 /sys/devices/virtual/timed_output/vibrator/vtg_level
+    chown system system /sys/module/hall/parameters/hall_toggle
+    chmod 0660 /sys/module/hall/parameters/hall_toggle
+
+# KCal
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_hue
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_sat
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_val
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_min
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_enable
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_hue
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_sat
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_val
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_min
+    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal
