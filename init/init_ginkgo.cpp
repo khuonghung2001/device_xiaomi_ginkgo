@@ -58,6 +58,6 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
 void vendor_load_properties()
 {
     // fingerprint
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:R/RPP2.200227.009/6291673:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/crosshatch/crosshatch:10/QQ2A.200305.002/6138846:user/release-keys");
     property_override("vendor.audio.adm.buffering.ms", "6");
 }
