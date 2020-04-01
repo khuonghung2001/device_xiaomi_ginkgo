@@ -96,7 +96,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_skip_validate=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     video.disable.ubwc=1 \
-
+    ro.surface_flinger.vsync_event_phase_offset_ns=4000000 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=8000000 \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
