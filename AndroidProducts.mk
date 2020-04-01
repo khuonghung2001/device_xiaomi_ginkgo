@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_ginkgo.mk
+    $(LOCAL_DIR)/du_ginkgo.mk

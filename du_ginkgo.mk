@@ -9,25 +9,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit from custom vendor
- $(call inherit-product, vendor/MiuiCamera/config.mk)
-
-#GAPPS
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
-DERP_BUILDTYPE=Official
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+
+# Inherit from Corvus-ROM
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_ginkgo
+PRODUCT_NAME := du_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
