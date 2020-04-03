@@ -529,9 +529,9 @@
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
-      "Node": "SchedFeatures",
+      "Node": "SchedBoost",
       "Duration": 1000,
-      "Value": "NO_ENERGY_AWARE"
+      "Value": "1"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
