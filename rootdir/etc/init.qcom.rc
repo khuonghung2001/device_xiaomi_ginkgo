@@ -35,8 +35,8 @@ on early-init
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
 
-    # Disable EAS
-    write /sys/kernel/debug/sched_features NO_ENERGY_AWARE
+    # Enable sched_boost
+    write /proc/sys/kernel/sched_boost 1
 
     # Change ownership of hw_recovery related nodes
     chown system graphics /sys/kernel/debug/dri/0/debug/dump
@@ -491,8 +491,8 @@ on property:persist.vendor.sys.rawdump_copy=0
     write /sys/kernel/dload/emmc_dload 0
 
 on property:sys.boot_completed=1
-    # Enable EAS
-    write /sys/kernel/debug/sched_features ENERGY_AWARE
+    # Disable sched_boost
+    write /proc/sys/kernel/sched_boost 0
 
     write /dev/kmsg "Boot completed "
 
@@ -999,8 +999,8 @@ on charger
     load_system_props
     start qcom-post-boot
 
-    # Enable EAS
-    write /sys/kernel/debug/sched_features ENERGY_AWARE
+    # Disable sched_boost
+    write /proc/sys/kernel/sched_boost 0
 
 #add poweroffhandler
 service poweroffhandler /system/vendor/bin/poweroffhandler

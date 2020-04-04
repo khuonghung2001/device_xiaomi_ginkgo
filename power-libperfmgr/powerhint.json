@@ -213,11 +213,11 @@
       "ResetOnInit": true
     },
     {
-      "Name": "SchedFeatures",
-      "Path": "/sys/kernel/debug/sched_features",
+      "Name": "SchedBoost",
+      "Path": "/proc/sys/kernel/sched_boost",
       "Values": [
-        "NO_ENERGY_AWARE",
-        "ENERGY_AWARE"
+        "1",
+        "0"
       ],
       "ResetOnInit": true
     },
@@ -430,9 +430,9 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "SchedFeatures",
+      "Node": "SchedBoost",
       "Duration": 5000,
-      "Value": "NO_ENERGY_AWARE"
+      "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
