@@ -5,3 +5,7 @@ allow init storage_file:lnk_file { read write };
 allow init mnt_user_file:lnk_file { read write };
 allow init sdcardfs:dir { search read write add_name create };
 allow init sdcardfs:file { create read write open };
+allow init sysfs:file { open read write };
+allow init sysfs_wake_lock:file { read write open };
+allow init sysfs_battery_supply:file { read write open };
+allow init sysfs_usb_supply:file { read open };
