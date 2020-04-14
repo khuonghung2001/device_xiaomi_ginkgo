@@ -17,16 +17,10 @@ TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Inherit from Corvus-ROM
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
-
-# Flavour
-DU_BUILD_TYPE := OFFICIAL
-
-# PixelGApps
-$(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := du_ginkgo
+PRODUCT_NAME := lineage_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
