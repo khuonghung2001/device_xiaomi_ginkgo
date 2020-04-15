@@ -60,4 +60,5 @@ void vendor_load_properties()
     // fingerprint
     property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
     property_override("vendor.audio.adm.buffering.ms", "6");
+    property_override("ro.bootimage.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
 }
