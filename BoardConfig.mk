@@ -218,3 +218,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Ignore Selinux Neverallow
 SELINUX_IGNORE_NEVERALLOWS := true
+
+# Set to avoid warning
+BOARD_SEPOLICY_VERS := \
+    $(PLATFORM_SDK_VERSION).0
