@@ -215,3 +215,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/ginkgo/BoardConfigVendor.mk
+
+# Ignore Selinux Neverallow
+SELINUX_IGNORE_NEVERALLOWS := true
