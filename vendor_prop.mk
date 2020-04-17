@@ -151,3 +151,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=22,22 \
     telephony.lteOnCdmaDevice=1
 
+# Renderer
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwui.renderer=skiavk
