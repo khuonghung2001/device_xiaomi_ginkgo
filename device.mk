@@ -259,7 +259,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.anxfilecheck.sh 
+    init.anxfilecheck.sh \
+    init.safailnet.rc
 
 # Input
 PRODUCT_COPY_FILES += \
