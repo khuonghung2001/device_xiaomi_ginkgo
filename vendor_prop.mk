@@ -1,3 +1,6 @@
+# Fingerprint should picked up
+BUILD_FINGERPRINT := xiaomi/ginkgo/ginkgo:9/PKQ1.190616.001/V11.0.3.0.PCOMIXM:user/release-keys
+
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-threads=8 \
