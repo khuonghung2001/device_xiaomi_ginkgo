@@ -31,6 +31,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="ginkgo-user 9 PKQ1.190616.001 V11.0.3.0.PCOMIXM release-keys" \
     PRODUCT_NAME="ginkgo" \
     TARGET_DEVICE="ginkgo"
 
