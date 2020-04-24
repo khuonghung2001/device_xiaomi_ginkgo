@@ -9,7 +9,7 @@
         "remote":       "github",
         "repository":   "azrim/kernel_xiaomi_ginkgo",
         "target_path":  "kernel/xiaomi/ginkgo",
-        "revision":     "storm"
+        "revision":     "st"
     },
     {
         "remote":       "github",
