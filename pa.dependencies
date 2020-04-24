@@ -1,4 +1,3 @@
- 
 [
     {
         "remote":       "github",
@@ -10,7 +9,7 @@
         "remote":       "github",
         "repository":   "azrim/kernel_xiaomi_ginkgo",
         "target_path":  "kernel/xiaomi/ginkgo",
-        "revision":     "ten"
+        "revision":     "storm"
     },
     {
         "remote":       "github",
@@ -20,20 +19,8 @@
     },
     {
         "remote":       "aospa",
-        "repository":   "AOSPA/android_device_qcom_common",
-        "target_path":  "device/qcom/common",
-        "revision":     "quartz"
-    },
-    {
-        "remote":       "blobs",
-        "repository":   "proprietary_vendor_qcom_common",
-        "target_path":  "vendor/qcom/common",
-        "revision":     "quartz"
-    },
-    {
-        "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_audio",
-        "target_path":  "hardware/qcom/audio",
+        "target_path":  "vendor/qcom/opensource/audio-hal/primary-hal",
         "revision":     "quartz-855"
     },
     {
@@ -50,15 +37,15 @@
     },
     {
         "remote":       "aospa",
-        "repository":   "AOSPA/android_frameworks_opt_net_wifi",
-        "target_path":  "frameworks/opt/net/wifi",
-        "revision":     "quartz-dev"
+        "repository":   "AOSPA/android_vendor_pa-biometrics-face",
+        "target_path":  "vendor/pa/biometrics-face",
+        "revision":     "quartz"
     },
     {
         "remote":       "aospa",
-        "repository":   "AOSPA/android_vendor_qcom-opensource_fm-commonsys",
-        "target_path":  "vendor/qcom/opensource/commonsys/fm",
-        "revision":     "quartz"
+        "repository":   "AOSPA/android_packages_apps_Bluetooth",
+        "target_path":  "android_packages_apps_Bluetooth",
+        "revision":     "quartz-dev"
     },
     {
         "remote":       "aospa",
@@ -66,3 +53,4 @@
         "target_path":  "vendor/qcom/opensource/commonsys-intf/display",
         "revision":     "quartz"
     }
+]
